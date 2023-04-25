@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 414px) {
+    .inphone {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@import './nav';
+@import './select';
+@import './list';
+@import './sidebar';

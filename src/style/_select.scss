@@ -1,0 +1,29 @@
+.checkboxwrap{
+    max-width: 600px;
+    .all{
+        display: flex;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+.otheroption{
+    display: flex;
+    flex-wrap: wrap;
+    .optionwrap{
+        width: 25%;
+        display: flex;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 414px) {
+    .otheroption{
+        .optionwrap{
+            width: 33.33333%;
+        }
+    }
+    .selectphone{
+        margin-bottom: 8px;
+        width: 100% !important;
+    }
+}
