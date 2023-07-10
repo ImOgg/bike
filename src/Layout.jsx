@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
-
+import Ubike_logo from "./images/logo.svg";
 const Layout = () => {
     const [ButtonPop, setButtonPop] = useState(false);
     function navtoggle() {
@@ -8,11 +8,11 @@ const Layout = () => {
     }
     return (
         <div >
-            <div className='header'>
-                <nav>
+            <div className='header' > 
+                <nav >
                     <ul>
                         <li >
-                            <Link to="">Ubike</Link>
+                            <Link to=""><img src={Ubike_logo} alt="Ubike_logo" width={'100px'} height={'60px'} /></Link>
                         </li>
                         <li className='phonenone'>
                             <Link to="/about">使用說明</Link>

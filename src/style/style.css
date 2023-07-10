@@ -23,6 +23,7 @@
 }
 .header nav ul {
   display: flex;
+  align-items: center;
   list-style-type: none;
 }
 .header nav ul li {
@@ -87,10 +88,6 @@
     margin-bottom: 8px;
     width: 100% !important;
   }
-}
-.list {
-  border: #AEAEAE 1px solid;
-  border-radius: 28px;
 }
 .list ul.title {
   list-style-type: none;
