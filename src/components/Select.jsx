@@ -25,10 +25,10 @@ const Select = ({ data, result, setresult }) => {
     } else if (userInput !== "") {
       const filteredData = data.filter((item) => item.sna === userInput);
       setresult(filteredData);
-      console.log(result);
+      // console.log(result);
     } else {
       setresult([]);
-      console.log(result);
+      // console.log(result);
     }
   }
   function selectall(e) {
@@ -42,17 +42,17 @@ const Select = ({ data, result, setresult }) => {
     //   console.log(result);
     }
   }
-  const handleCheckboxChange = (event) => {
-    const { value, checked } = event.target;
+  const handleCheckboxChange = (e) => {
+    const { value, checked } = e.target;
     const filteredData = data.filter((item) => item.sarea === value);
     if (checked) {
     //   console.log(data);
-      setresult((prevItems) => [...prevItems, ...filteredData]);
     //   console.log(result);
+      setresult((prevItems) => [...prevItems, ...filteredData]);
+      // setresult((prevItems) => [...prevItems, value]);
     } else {
-      setresult((prevItems) =>
-        prevItems.filter((item) => item === filteredData)
-      );
+      // setresult((prevItems) => prevItems.filter((item) => item === filteredData));
+      setresult((prevItems) => prevItems.filter((item) => item.sarea !== value));
     }
   };
 
