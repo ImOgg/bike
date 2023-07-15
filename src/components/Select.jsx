@@ -48,6 +48,7 @@ const Select = ({ data, result, setresult }) => {
     if (checked) {
       setresult((prevItems) => [...prevItems, ...filteredData]);
     } else {
+      // setresult((prevItems) => prevItems.filter((item) => item === filteredData));
       setresult((prevItems) => prevItems.filter((item) => item.sarea !== value));
     }
   };
