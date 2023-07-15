@@ -46,12 +46,8 @@ const Select = ({ data, result, setresult }) => {
     const { value, checked } = e.target;
     const filteredData = data.filter((item) => item.sarea === value);
     if (checked) {
-    //   console.log(data);
-    //   console.log(result);
       setresult((prevItems) => [...prevItems, ...filteredData]);
-      // setresult((prevItems) => [...prevItems, value]);
     } else {
-      // setresult((prevItems) => prevItems.filter((item) => item === filteredData));
       setresult((prevItems) => prevItems.filter((item) => item.sarea !== value));
     }
   };
