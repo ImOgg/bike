@@ -17,6 +17,11 @@ const Home = () => {
   return (
     <div className='inphone' style={{ maxWidth: "1440px", margin: "auto", minHeight: "100vh", position: 'relative' }}>
       <Select data={data}  result={result} setresult={setresult}/>
+      {/* {result.length === 0 ? (
+        <div style={{fontSize:'32px'}}>目前沒有資料，請輸入您想查詢的項目</div>
+      ) : (
+        <List data={result} />
+      )} */}
       <List data={result} />
     </div>
   )

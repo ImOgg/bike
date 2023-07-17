@@ -24,7 +24,7 @@ const Layout = () => {
                             <Link to="/about">站點資訊</Link>
                         </li >
                         <li className='phonenone'>
-                            <Link to="/about">最新消息</Link>
+                            <Link to="/news">最新消息</Link>
                         </li>
                         <li className='phonenone'>
                             <Link to="/about">活動專區</Link>
